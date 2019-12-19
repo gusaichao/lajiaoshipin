@@ -47,7 +47,7 @@ public class LoginActivity extends BaseActivity {
     TextView textZhuce;
     private RequestQueue mRequestQueue = NoHttp.newRequestQueue();
     private User user;
-
+	// 更新了 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
