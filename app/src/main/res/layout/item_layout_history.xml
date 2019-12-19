@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_alignLeft="@id/image"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textshichang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/image"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textshanchu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background_textview_yuan_gray"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+</RelativeLayout>

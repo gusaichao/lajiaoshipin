@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack_b"
+    tools:context=".ui.activity.AllVideoActivity">
+
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/include_fenxiang_header" />
+
+    <LinearLayout
+        android:id="@+id/ll_fenlei"
+        android:layout_below="@id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:checked="true"
+                android:background="@drawable/radioitem"
+                android:button="@null"
+                android:text="综合"
+                android:textColor="@color/colorWhite"
+                />
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="最新"
+                android:background="@drawable/radioitem"
+                android:button="@null"
+                android:textColor="@color/colorWhite"
+                />
+
+            <RadioButton
+                android:id="@+id/radioBtn3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/radioitem"
+                android:button="@null"
+                android:text="最热" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout1"
+        android:layout_below="@id/ll_fenlei"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorBlack"
+        app:tabTextColor="@color/colorWhite"
+        app:tabSelectedTextColor="@color/colorWhite"
+        app:tabIndicatorHeight="0dp"
+        app:tabBackground="@drawable/tabitem"
+        app:tabMode="scrollable"
+        android:paddingBottom="5dp"
+        />
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/banner"
+        android:layout_below="@id/tablayout1"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:numColumns="2" />
+
+
+
+</RelativeLayout>

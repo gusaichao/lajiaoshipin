@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayEEE"
+    tools:context=".ui.activity.LoginActivity">
+
+    <include layout="@layout/include_common_header" />
+
+    <EditText
+        android:id="@+id/ed_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorWhite"
+        android:hint="请输入用户名"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        style="@style/grayline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorWhite"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:digits="qwertyuiopasdfghjklzxcvbnm1234567890"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <View
+        style="@style/grayline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/ed_yanzhengma"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:hint="验证码"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image_yanzhengma"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:background="@drawable/background_textview_yuanjian_colortopic"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/text_zhuce"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="注册一个账号"
+        android:textColor="@color/gray8e8e"
+        android:textSize="14sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        />
+</LinearLayout>

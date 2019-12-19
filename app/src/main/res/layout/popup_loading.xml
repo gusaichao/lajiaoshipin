@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading_lyt"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="@drawable/pop_loading_bg">
+
+    <RelativeLayout
+        android:id="@+id/percent_lyt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#44000000"
+        android:visibility="gone">
+
+        <com.linkhand.lajiaoshipin.widget.CircleProgressBar
+            android:id="@+id/percent_bar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android_custom:circleColor="@color/gray666"
+            android_custom:circleProgressColor="@color/colorWhite"
+            android_custom:circleStyle="circleSTROKE"
+            android_custom:circleTextColor="@color/colorWhite"
+            android_custom:circleTextIsDisplayable="true"
+            android_custom:circleTextSize="12sp"
+            android_custom:circleWidth="2dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
